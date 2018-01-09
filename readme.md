@@ -16,4 +16,4 @@ sudo apt autoremove
 ```
 
 In VSCode :
-<kbd>CTRL + P</kbd>, then `ext install `, find "Solidity", by Juan Blanco
+`CTRL + P`, then `ext install `, find "Solidity", by Juan Blanco
