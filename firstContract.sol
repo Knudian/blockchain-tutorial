@@ -17,4 +17,12 @@ contract FirstContract {
         address player;
         uint value;
     }
+
+    Bet[] public betList;
+
+    // event <eventName> ( <type> param1, <type> param2 )
+    event Finished (uint amount, uint timeNextBet);
+
+    // function <functionName> ( <type> param1, <type> param2 ) {}
+
 }
