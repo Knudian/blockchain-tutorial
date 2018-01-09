@@ -1,0 +1,14 @@
+[
+    {
+        "password":"test1",
+        "address":"0x2036b34d43f13882e84da9e4b136ec313d32dcfa"
+    },
+    {
+        "password":"test2",
+        "address":"0xc78a1060d3719ab66a7f88bff2894a8fd611adc4"
+    },
+    {
+        "password":"test3",
+        "address":"0x61a6ed39bdcc2e1d3b7aa34c1bfd45f7f4106069"
+    }
+]

@@ -1,0 +1,1 @@
+http://cryptomining-blog.com/wp-content/download/ethminer-0.9.41-genoil-1.0.8.zip

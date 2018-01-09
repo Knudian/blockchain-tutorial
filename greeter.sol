@@ -10,7 +10,7 @@ contract Mortal {
     }
 
     function kill() public {
-        if (msg.sender==owner) {
+        if ( msg.sender == owner ) {
             selfdestruct(owner);
         }
     }
@@ -20,6 +20,7 @@ contract Greeter is Mortal {
 
     string greeting;
 
+    // function Name(Type Param) Visibiliy OtherInfos [returns (Type2)] {}
     function Greeter (string _greeting) public {
         greeting = _greeting;
     }
@@ -27,5 +28,5 @@ contract Greeter is Mortal {
     function greet() public constant returns (string) {
         return greeting;
     }
-    
+
 }

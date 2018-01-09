@@ -5,11 +5,11 @@ contract Mortal {
     address owner;
 
     // Function is used during init, and set the contract owner.
-    function Mortal() {
+    function Mortal() public {
         owner = msg.sender;
     }
 
-    function kill() {
+    function kill() public {
         if (msg.sender==owner) {
             selfdestruct(owner);
         }
