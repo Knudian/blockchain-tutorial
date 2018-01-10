@@ -39,3 +39,28 @@ geth --datadir /path/to/private/ethereum/folder --networkid [integer] --rpc --ve
 personal.newAccount("a password")
 ```
 returns a _hex_ string (a memory address ?)
+
+---
+
+Add `1e18` to the balance of an account :
+```json
+{...
+    "alloc":{
+        "0x2036b34d43f13882e84da9e4b136ec313d32dcfa":{
+            "balance":"1000000000000000000"
+        }
+    }
+```
+
+---
+
+Transfer all balance from account 1 to account 2
+```javascript
+primary = eth.accounts[0];
+secondary = eth.accounts[1];
+balance1 = web3.fromWei(eth.getBalance(primary), "ether");
+balance2 = web3.fromWei(eth.getBalance(secondary), "ether");
+```
+
+The `fromWei` converts Wei (ethereum transfer units) into Ethereums units.
+The `getBalance` returns the balance of the account address given as parameters.
